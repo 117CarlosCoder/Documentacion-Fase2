@@ -1,0 +1,116 @@
+{
+	"admins": [{
+		"id": 123,
+		"nombre": "Administrador 1",
+		"nombre_usuario": "admin12",
+		"contraseña": "password1",
+		"direccion":"",
+		"tipo":"Administrador",
+		"correo": "admin@medical.com",
+		"fecha_nacimiento": "1988-04-03",
+		"saldo": 0
+	}],
+
+	
+	"medicos": [{
+		"id": 123,
+		"tipo":"Medico",
+		"nombre": "Médico 1",
+		"nombre_usuario": "medico12",
+		"contraseña": "password1",
+		"direccion": "Direccion 1",
+		"cui": 1123123450921,
+		"telefono": 11112222,
+		"correo": "medico1@bbb.ccc",
+		"fecha_nacimiento": "2012-02-03",
+		"saldo": 1500.50,
+		"horarios": ["8:00-12:00", "14:00-17:00"],
+		"especialidades": [{
+			"id": 2,
+			"cui": 1123123450921,
+			"costo": 150
+		}, {
+			"id": 2,
+			"cui": 1123123450921,
+			"costo": 300
+		}]
+	}],
+
+	"laboratorios": [{
+		"id": 123,
+		"tipo":"Laboratorio",
+		"nombre": "Laboratorio 1",
+		"nombre_usuario": "lab12",
+		"contraseña": "password1",
+		"direccion": "Direccion 1",
+		"cui": 1123123450922,
+		"telefono": 11112222,
+		"correo": "lab1@bbb.ccc",
+		"fecha_nacimiento": "2012-02-03",
+		"saldo": 3453.75,
+		"examenes": [{
+			"id": 123,
+			"cui":1123123450922,
+			"costo": 50
+		}, {
+			"id": 123,
+			"cui":1123123450922,
+			"costo": 60
+		}]
+	}],
+
+	"pacientes": [{
+		"id": 123,
+		"tipo":"Paciente",
+		"nombre": "Paciente 1",
+		"nombre_usuario": "paciente12",
+		"contraseña": "password1",
+		"direccion": "Direccion 1",
+		"cui": 1123123450923,
+		"telefono": 11112222,
+		"correo": "paciente1@bbb.ccc",
+		"fecha_nacimiento": "2012-02-03",
+		"saldo": 350
+	}],
+	"especialidades": [{
+		"id": 123,
+		"nombre": "Especialidad 1",
+		"descripcion": "Descripion de la especialidad"
+	}],
+
+	"tipos_examenes": [{
+		"id": 123,
+		"nombre": "Nombre tipo examen",
+		"descripcion": "Descripcion del examen"
+	}],
+
+	"consultas": [{ 
+		"id": 1,
+		"paciente": 1,
+		"medico": "Med1",
+		"especialidad": 123,
+		"examenes_solicitados": [{"id": 5}, {"id": 35}],
+		"fecha_inicio": "2023 - 03 - 03",
+		"fecha_fin": "2023-03-06 10:00",
+		"estado": "FINALIZADA"
+	}],
+
+	"solicitudes": [{
+		"id": 44,
+		"paciente": 2,
+		"laboratorio": 6,
+		"porcentaje_aplicacion": 0.04,
+		"fecha_solicitud": "2023-03-31",
+		"fecha_finalizado": "2023-04-03",
+		"examenes": [{
+			"id": 5,
+			"laboratorio": 6,
+			"costo": 50
+		}, {
+			"id": 35,
+			"laboratorio": 6,
+			"costo": 70
+		}],
+		"estado": "FINALIZADA"
+	}]
+}
